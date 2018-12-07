@@ -14,78 +14,88 @@ button{
 	font-style: Lato;
 }
 
-ul{
-	list-style-type: none;
+body{
 	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #FFFFFF;
-
-	/* sticky nav bar */
-	position: fixed;
-  	top: 0;
-  	width: 100%;
 }
 
-li{
+/* Logo */
+#logo{
+	position:absolute;
+    top:0px; 
+    left:0px;
+    bottom: 0px;
+    width:50px;
+    height:50px;
+    overflow:hidden;
+}
+
+#logo:hover{
+	background-color: none;
+}
+
+/* Navbar container */
+.navbar {
+  	overflow: hidden;
+  	background-color: #333;
+}
+
+/* Links inside the navbar */
+.navbar a {
 	float: left;
-}
-
-li:after{
-	content: '';
-  	height: 100%;
-  	width: 1px;
-	position: absolute;
-  	right: 0;
-  	top: 0;
-	background-color: #000000;
-}
-
-li a, .userbtn {
-  	display: inline-block;
-  	color: black;
+  	font-size: 18px;
+  	color: white;
   	text-align: center;
   	padding: 14px 16px;
   	text-decoration: none;
-  	font-size: 1.3vw;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover, .user:hover, .userbtn {
-  	background-color: #00bfff;
+/* The dropdown container */
+.dropdown {
+  	float: right;
+  	overflow: hidden;
 }
 
-li.user{
-	display:inline-block;
+/* Dropdown button */
+.dropdown .dropbtn {
+  	font-size: 18px; 
+  	border: none;
+  	outline: none;
+  	color: white;
+  	padding: 14px 16px;
+ 	background-color: inherit;
 }
 
-.user-content{
-	display: none;
-	position: absolute;
-	background-color: #d2d7dd;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  	background-color: red;
 }
 
-.user-content a{
-	color: black;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-	text-align: left;
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  	display: none;
+  	position: absolute;
+  	background-color: #f9f9f9;
+  	min-width: 160px;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	z-index: 1;
 }
 
-.user-content a:hover {background-color: #f1f1f1}
-
-.user:hover .user-content{
-	display: block;
+/* Links inside the dropdown */
+.dropdown-content a {
+  	float: none;
+  	color: black;
+  	padding: 12px 16px;
+  	text-decoration: none;
+  	display: block;
+  	text-align: left;
 }
 
-#popup{
-
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  	background-color: #ddd;
 }
 
-.input{
-
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  	display: block;
 }
