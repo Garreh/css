@@ -3,18 +3,47 @@
 	font-family: "Roboto" !important;
 }
 
+/* Default background color */
 body{
 	background-color: #FAFAFA;
   margin: 0;
 }
 
-button{
-	background-color: #0000FF;
-	color: #FFFFFF;
-	border: 1px solid Black;
+/* Default button */
+.button {
+  background-color: #0000FF;
+  border: 2px solid #0000FF;
+  color: #FFFFFF;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
-/* Logo */
+.button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #0000FF;
+}
+
+.buttondisabled{
+  background-color: #0000FF;
+  border: 2px solid #0000FF;
+  color: #FFFFFF;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+/* Company logo */
 #logo{
 	position:absolute;
   top:0px; 
@@ -25,39 +54,39 @@ button{
   overflow:hidden;
 }
 
+/* The crown logo */
 #adminlogo{
   position:absolute;
   top:9px; 
   bottom:9px;
-  right: 230px;
+  right: 255px;
   overflow:hidden;
 }
 
 /* Navbar container */
-#navbar {
+.navbar {
   overflow: hidden;
   background-color: #FFFFFF;
 }
 
 /* Links inside the navbar */
-#navbar a {
+.navbar a {
 	float: left;
   font-size: 18px;
   color: #333;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  display: block;
 }
 
 /* The dropdown container */
-#dropdown {
+.dropdown {
   float: right;
   overflow: hidden;
 }
 
 /* Dropdown button */
-#dropdown #dropbtn {
+.dropdown .dropbtn {
   font-size: 18px; 
   border: none;
   outline: none;
@@ -67,7 +96,7 @@ button{
 }
 
 /* Dropdown content (hidden by default) */
-#dropdown-content {
+.dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -77,7 +106,7 @@ button{
 }
 
 /* Links inside the dropdown */
-#dropdown-content a {
+.dropdown-content a {
   float: none;
   color: black;
   padding: 12px 16px;
@@ -87,25 +116,26 @@ button{
 }
 
 /* Add a grey background color to dropdown links on hover */
-#dropdown-content a:hover {
+.dropdown-content a:hover {
   background-color: #ddd;
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover #dropdown-content {
+.dropdown:hover .dropdown-content {
   display: block;
 }
 
-.content {
-  padding: 16px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
+/* Back to top button */
+#topbutton {
+  display: none; 
+  position: fixed; 
+  bottom: 20px;
+  right: 30px;
+  z-index: 99; /* Make sure it does not overlap */
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 50px;
+  font-color: red;
 }
