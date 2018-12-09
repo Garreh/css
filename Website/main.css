@@ -9,6 +9,9 @@ body{
   margin: 0;
 }
 
+
+
+
 /* Default button */
 .button {
   background-color: #0000FF;
@@ -158,4 +161,38 @@ body{
 	bottom: 0;
 	width: 100%;
 
+}
+
+.textinput {
+
+   border: 1px solid #8492A6;
+   border-radius: 2px;
+   opacity: 0.5;
+	 width: 315px;
+	 height: 65px;
+	 resize: none;
+
+}
+.inputsmall{
+
+   border: 1px solid #8492A6;
+   border-radius: 2px;
+   opacity: 0.4;
+   width: 100px;
+   height: 25px
+}
+
+.dropdownfield{
+	background-color: #FFFFFF;
+	border: 1px solid #8492A6;
+	border-radius: 2px;
+	opacity: 0.4;
+	width: 200px;
+	height: 25px;
+	float:none;
+}
+
+.backbtn{
+	color: #274395;
+  height: 19.45px;
 }
