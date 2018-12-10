@@ -6,30 +6,32 @@
   </script>
   <script src="main.js"></script>
   <style>
-    .accordion {
-      background-color: #eee;
-      color: #444;
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 15px;
-      transition: 0.4s;
-    }
+  .accordion {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    border: 1px solid black;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
 
-    .active, .accordion:hover {
-      background-color: #ccc; 
-    }
+  .active, .accordion:hover {
+    background-color: #ccc; 
+}
 
-    .panel {
-      padding: 0 18px;
-      display: none;
-      background-color: white;
-      overflow: hidden;
-    }
-  </style>
+  .panel {
+    padding: 0px;
+    max-height: 0px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    width: 50%;
+}
+</style>
 </head>
 
 <body>
@@ -66,10 +68,63 @@
   <a>Account Settings</a>
 </div>
 
-<button class="accordion">Change Account Password</button>
+<br/><br/><br/><br/><br/>
+
+<h1 class="title2">Security and Login</h1>
+
+<p class="title3">Change your account email and password here.</p>
+
+<br/><br/><br/>
+
+<center>
+
+<button class="accordion">Change Account Password
+  <i class="fas fa-caret-down"></i>
+</button>
+<div class="panel">
+  <br/>
+  <form>
+    <p>Old Password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" class="inputsmalllong" name="" value="&nbsp;&nbsp;Enter your old password here">
+    </p>
+    <p>New Password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" class="inputsmalllong" name="" value="&nbsp;&nbsp;Enter your new password here">
+    </p>
+    <p>Retype Password: &nbsp;
+    <input type="text" class="inputsmalllong" name="" value="&nbsp;&nbsp;Confirm your new password here">
+    </p>
+    <br/>
+    <button class="button">Change Password</button>
+  </form>
+</div>
+
+<br/><br/><br/>
+
+<button class="accordion">Change Account Email</button>
 <div class="panel">
 
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
+
+</center>
+
+<!-- Accordion javascript here -->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 
 </body>
 </html>

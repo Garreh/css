@@ -182,6 +182,15 @@ body{
    height: 25px
 }
 
+.inputsmalllong{
+
+   border: 1px solid #8492A6;
+   border-radius: 2px;
+   opacity: 0.4;
+   width: 400px;
+   height: 25px
+}
+
 .dropdownfield{
 	background-color: #FFFFFF;
 	border: 1px solid #8492A6;
@@ -211,4 +220,15 @@ body{
   border: none;
   font-weight: bold;
   color: #FFFFFF;
+}
+
+.title2{
+  font-size: 40px; 
+  text-indent: 150px;
+}
+
+.title3{
+  font-size:18px; 
+  text-indent: 150px; 
+  line-height: 0px; 
 }
