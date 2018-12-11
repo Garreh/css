@@ -9,9 +9,6 @@ body{
   margin: 0;
 }
 
-
-
-
 /* Default button */
 .button {
   background-color: #0000FF;
@@ -147,7 +144,7 @@ body{
   background-color: #FFFFFF;
   border: 1px solid #8492A6;
   border-radius: 2px;
-  opacity: 0.4;
+  opacity: 1;
   width: 427px;
   height: 50px;
   font-size: 18px;
@@ -167,7 +164,7 @@ body{
 
    border: 1px solid #8492A6;
    border-radius: 2px;
-   opacity: 0.5;
+   opacity: 1;
 	 width: 315px;
 	 height: 65px;
 	 resize: none;
@@ -177,7 +174,7 @@ body{
 
    border: 1px solid #8492A6;
    border-radius: 2px;
-   opacity: 0.4;
+   opacity: 1;
    width: 100px;
    height: 25px
 }
@@ -186,7 +183,7 @@ body{
 
    border: 1px solid #8492A6;
    border-radius: 2px;
-   opacity: 0.4;
+   opacity: 1;
    width: 400px;
    height: 25px
 }
@@ -195,15 +192,28 @@ body{
 	background-color: #FFFFFF;
 	border: 1px solid #8492A6;
 	border-radius: 2px;
-	opacity: 0.4;
+	opacity: 1;
 	width: 200px;
 	height: 25px;
 	float:none;
 }
 
+.dropdownlong{
+  background-color: #FFFFFF;
+  border: 1px solid #8492A6;
+  border-radius: 2px;
+  opacity: 1;
+  width: 400px;
+  height: 25px;
+  float:none;
+}
+
 .backbtn{
 	color: #274395;
   height: 19.45px;
+  text-indent: 50px;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .title{
@@ -228,7 +238,8 @@ body{
 }
 
 .title3{
-  font-size:18px; 
+  font-size:16px; 
   text-indent: 150px; 
   line-height: 0px; 
+  color: #97a2b2;
 }

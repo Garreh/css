@@ -64,6 +64,7 @@
   <i class="fas fa-caret-up" style="color:#0000FF;"></i>
 </button>
 
+<!-- Title container -->
 <div class="title">
   <a>Account Settings</a>
 </div>
@@ -79,19 +80,19 @@
 <center>
 
 <button class="accordion">Change Account Password
-  <i class="fas fa-caret-down"></i>
+  <i class="fas fa-caret-down" style="float: right; font-size:18px;"></i>
 </button>
 <div class="panel">
   <br/>
   <form>
     <p>Old Password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input type="text" class="inputsmalllong" name="" value="&nbsp;&nbsp;Enter your old password here">
+    <input type="password" class="inputsmalllong" placeholder="&nbsp;&nbsp;Enter your old password here">
     </p>
     <p>New Password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input type="text" class="inputsmalllong" name="" value="&nbsp;&nbsp;Enter your new password here">
+    <input type="password" class="inputsmalllong" placeholder="&nbsp;&nbsp;Enter your new password here">
     </p>
     <p>Retype Password: &nbsp;
-    <input type="text" class="inputsmalllong" name="" value="&nbsp;&nbsp;Confirm your new password here">
+    <input type="password" class="inputsmalllong" placeholder="&nbsp;&nbsp;Retype your new password here">
     </p>
     <br/>
     <button class="button">Change Password</button>
@@ -100,10 +101,27 @@
 
 <br/><br/><br/>
 
-<button class="accordion">Change Account Email</button>
+<button class="accordion">Change Account Email
+  <i class="fas fa-caret-down" style="float: right; font-size:18px;"></i>
+</button>
 <div class="panel">
-
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <br/>
+  <form>
+    <p>Old Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="email" class="inputsmalllong" placeholder="&nbsp;&nbsp;Enter your old email here">
+    </p>
+    <p>New Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="email" class="inputsmalllong" placeholder="&nbsp;&nbsp;Enter your new email here">
+    </p>
+    <p>Retype Email: &nbsp;
+    <input type="email" class="inputsmalllong" placeholder="&nbsp;&nbsp;Retype your new email here">
+    </p>
+    <br/>
+    <p style="font-size: 12px;">You will be sent a confirmation email to confirm the change, and in case you </p>
+    <p style="font-size: 12px;">forgot your password, a resetted password will be sent to your registered email.</p>
+    <br/>
+    <button class="button">Change Email</button>
+  </form>
 </div>
 
 </center>
