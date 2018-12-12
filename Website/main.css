@@ -212,7 +212,7 @@ body{
 	color: #274395;
   height: 19.45px;
   text-indent: 50px;
-  text-decoration: underline;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -233,13 +233,13 @@ body{
 }
 
 .title2{
-  font-size: 40px; 
+  font-size: 40px;
   text-indent: 150px;
 }
 
 .title3{
-  font-size:16px; 
-  text-indent: 150px; 
-  line-height: 0px; 
+  font-size:16px;
+  text-indent: 150px;
+  line-height: 0px;
   color: #97a2b2;
 }
