@@ -218,7 +218,7 @@ body{
 
 .title{
   background-color: #3862DE;
-  position: fixed;
+  position: absolute;
   font-size: 45px;
   height: 100px;
   width: 100%;
