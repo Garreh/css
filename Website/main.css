@@ -213,7 +213,8 @@ body{
   height: 19.45px;
   text-indent: 50px;
   text-decoration: none;
-  cursor: pointer;
+  position: absolute;
+  top: 170px;
 }
 
 .title{
