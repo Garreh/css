@@ -1,84 +1,90 @@
 <!doctype html>
 <html>
 <head>
-	<link rel = "stylesheet" href="main.css">
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-  <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous">
-  </script>
+<title>Adding Accounts</title>
+
+  <?php include('Others/header.php'); ?>
 
 </head>
 
 <body>
 
-<!-- Navigation bar -->
-<div class="navbar">
-	<a href="mainmenu.html"><img src="logo.png" id="logo"></a>
-	<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-  	<a href="mainmenu.html">Home</a>
-  	<a href="importmenu.html">Import</a>
-  	<a href="javascript:void(0)">Export</a>
-  	<a href="javascript:void(0)">Accounting</a>
-  	<a href="javascript:void(0)">Management</a>
-  	<a href="javascript:void(0)">Sales</a>
-    <a href="javascript:void(0)"><img src="admin.png" id="adminlogo"></a>
-  	<div class="dropdown">
-    	<button class="dropbtn">Logged in as Kasai Kazuki&nbsp;
-        <i class="fas fa-caret-down"></i>
-      </button>
-    		<div class="dropdown-content">
-      			<a href="accountsettings.html">Manage Account</a>
-            <a href="adminmenu.html">Manage Employee Accounts</a>
-      			<a href="javascript:void(0)">Sign Out</a>
-    		</div>
-  	</div>
+  <?php include('Others/navbar.php'); ?>
+
+<div class="container-fluid title">
+  <div class="row-fluid">
+    <div class="col-xl">
+      Editing Accounts
+    </div>
+  </div>
 </div>
 
-<!-- Jump to top button -->
-<button onclick="topFunction()" id="topbutton">
-  <i class="fas fa-caret-up" style="color:#0000FF;"></i>
-</button>
+<br/>
 
-<!-- Title container -->
-<div class="title">
-  <a>Editing Accounts</a>
+<div class="row-fluid">
+  <div class="col-4">
+    <a href="adminmenu.php" class="backbtn">
+      <i class="fas fa-angle-left" style="color:#274395;"></i> BACK
+    </a>
+  </div>
 </div>
-
-<a href="adminpanel.html" class="backbtn" >
-  <i class="fas fa-angle-left" style="color:#274395;"></i> BACK
-</a>
 
 <center>
-
-<br/><br/><br/>
-
-<p style="font-size: 16px; color: #97a2b2;">Edit an employee credential here. The new information will apply to all newly created and edited data, but not previous ones.</p>
+<div class="container-fluid title3" style="text-indent: 0px">
+  <div class="row-fluid">
+    <div class="col-7">
+      Edit an employee credential here. The new information will apply to all newly created and edited data, but not previous ones.
+    </div>
+  </div>
+</div>
+</center>
 
 <br/><br/>
 
-<form>
-  <p>Login ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input type="text" class="inputsmalllong">
-  </p><br/>
-  <p>Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input type="email" class="inputsmalllong">
-  </p><br/>
-  <p>Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input type="password" class="inputsmalllong">
-  </p><br/>
-  <p>Group: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <select id="" name="" class="dropdownlong">
-      <option value="" disabled selected>Select a Group</option>
-      <option value="GroupA">Group A</option>
-      <option value="GroupB">Group B</option>
-    </select>
-  </p>
-  <br/>
-  <p style="font-size: 16px; color: #97a2b2;">Note: An employee can only see details of the group that he/she is assigned to.</p>
-  <br/><br/>
-  <button class="button">Apply Changes</button>
-</form>
+<form name="form" method="post" id="" class="form-horizontal container">
+  <div class="form-group row justify-content-center">
+    <label for="inputID" class="col-sm-2 col-form-label">Login ID</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="inputID">
+    </div>
+  </div>
 
-</center>
+  <div class="form-group row justify-content-center">
+    <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-4">
+      <input type="email" class="form-control" id="inputEmail">
+    </div>
+  </div>
+
+  <div class="form-group row justify-content-center">
+    <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="inputName">
+    </div>
+  </div>
+
+  <div class="form-group row justify-content-center">
+    <label for="inputGroup" class="col-sm-2 col-form-label">Group</label>
+    <div class="col-sm-4">
+      <select class="form-control" id="inputGroup">
+        <option disabled selected>Select a Group</option>
+        <option>Group A</option>
+        <option>Group B</option>
+      </select>
+      <small id="passwordHelpBlock" class="form-text text-muted">
+      Note: An employee can only see the details of the group that they are assigned to.
+      </small>
+    </div>
+  </div>
+
+  <br/>
+
+  <div class="form-group row justify-content-center">
+    <div class="col-sm-7 text-center">
+      <button type="submit" class="button">Confirm Changes</button>
+    </div>
+  </div>
+</form>
 
 </body>
 </html>
