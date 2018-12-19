@@ -1,0 +1,137 @@
+/* default font for the website !important overrides everything on the website*/
+* {
+	font-family: "Roboto" !important;
+}
+
+/* Default button */
+.button {
+  background-color: #0000FF;
+  border: 2px solid #0000FF;
+  color: #FFFFFF;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #0000FF;
+}
+
+.buttondisabled{
+  background-color: #0000FF;
+  border: 2px solid #0000FF;
+  color: #FFFFFF;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.input{
+  background-color: #FFFFFF;
+  border: 1px solid #8492A6;
+  border-radius: 2px;
+  opacity: 1;
+  width: 427px;
+  height: 50px;
+  font-size: 18px;
+
+}
+
+.foot{
+	height: 50px;
+	background-color: black;
+	position:fixed;
+	bottom: 0;
+	width: 100%;
+
+}
+
+.textinput {
+
+   border: 1px solid #8492A6;
+   border-radius: 2px;
+   opacity: 1;
+	 width: 315px;
+	 height: 65px;
+	 resize: none;
+
+}
+.inputsmall{
+
+   border: 1px solid #8492A6;
+   border-radius: 2px;
+   opacity: 1;
+   width: 100px;
+   height: 25px
+}
+
+.inputsmalllong{
+
+   border: 1px solid #8492A6;
+   border-radius: 2px;
+   opacity: 1;
+   width: 400px;
+   height: 25px
+}
+
+.dropdownfield{
+	background-color: #FFFFFF;
+	border: 1px solid #8492A6;
+	border-radius: 2px;
+	opacity: 1;
+	width: 200px;
+	height: 25px;
+	float:none;
+}
+
+.dropdownlong{
+  background-color: #FFFFFF;
+  border: 1px solid #8492A6;
+  border-radius: 2px;
+  opacity: 1;
+  width: 400px;
+  height: 25px;
+  float:none;
+}
+
+.backbtn{
+	color: #274395;
+  text-indent: 50px;
+  text-decoration: none;
+  position: absolute;
+}
+
+.title{
+  background-color: #3862DE;
+  font-size: 2.5em;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.title2{
+  font-size: 40px;
+  text-indent: 5%;
+}
+
+.title3{
+  font-size:16px;
+  text-indent: 5%;
+  line-height: 0px;
+  color: #97a2b2;
+}
