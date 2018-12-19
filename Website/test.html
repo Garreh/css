@@ -1,32 +1,14 @@
 <!doctype html>
 <html>
 <head>
-  <link rel = "stylesheet" href="main.css">
+  <title>Account Settings</title>
 
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-  <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous">
-  </script>
-
-  <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <title>Test</title>
-
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-<!-- Forcefully remove bootstrap default bg color -->
-<style type="text/css">
-   body { background: #FAFAFA !important; }
-</style>
-
-<script src="main.js"></script>
+  <script> 
+    $(function(){
+    $("#header").load("header.html"); 
+    $("#footer").load("footer.html"); 
+  });
+</script>
 
 </head>
 
@@ -34,7 +16,7 @@
 
 <!-- Navigation bar -->
 <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
-  <a class="navbar-brand" href="#"><img src="logo.png" width="30" height="30"></a>
+  <a class="navbar-brand" href="#"><img src="sklogo.png" width="30" height="30"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -63,7 +45,7 @@
 
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#"><img src="admin.png" width="30" height="30"></a>
+        <a class="nav-link" href="#"><i class="fas fa-crown" style="color: orange;"></i></a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -122,17 +104,32 @@
       <div id="collapseOne" class="collapse" data-parent="#accordion">
         <div class="card-body">
           <form>
-            <p>Old Password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <input type="password" class="inputsmalllong" placeholder="&nbsp;&nbsp;Enter your old password here">
-            </p>
-            <p>New Password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <input type="password" class="inputsmalllong" placeholder="&nbsp;&nbsp;Enter your new password here">
-            </p>
-            <p>Retype Password: &nbsp;
-              <input type="password" class="inputsmalllong" placeholder="&nbsp;&nbsp;Retype your new password here">
-            </p>
-            <br/>
-            <button class="button">Change Password</button>
+            <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Old Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Enter your old password here">
+              </div>
+            </div>
+            <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">New Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Enter your new password here">
+                  <small id="passwordHelpBlock" class="form-text text-muted">
+                  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                  </small>
+              </div>
+            </div>
+            <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Confirm Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Confirm your new password here">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-12 text-center">
+                <button type="submit" class="button">Change Password</button>
+              </div>
+            </div>
           </form>
         </div>
       </div>
@@ -150,20 +147,32 @@
       <div id="collapseTwo" class="collapse" data-parent="#accordion">
         <div class="card-body">
           <form>
-            <p>Old Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <input type="email" class="inputsmalllong" placeholder="&nbsp;&nbsp;Enter your old email here">
-            </p>
-            <p>New Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <input type="email" class="inputsmalllong" placeholder="&nbsp;&nbsp;Enter your new email here">
-            </p>
-            <p>Retype Email: &nbsp;
-              <input type="email" class="inputsmalllong" placeholder="&nbsp;&nbsp;Retype your new email here">
-            </p>
-            <br/>
-            <p style="font-size: 12px;">You will be sent a confirmation email to confirm the change, and in case you </p>
-            <p style="font-size: 12px;">forgot your password, a resetted password will be sent to your registered email.</p>
-            <br/>
-            <button class="button">Change Email</button>
+            <div class="form-group row">
+            <label for="inputEmail" class="col-sm-2 col-form-label">Old Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Enter your old email here">
+              </div>
+            </div>
+            <div class="form-group row">
+            <label for="inputEmail" class="col-sm-2 col-form-label">New Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Enter your new email here">
+              </div>
+            </div>
+            <div class="form-group row">
+            <label for="inputEmail" class="col-sm-2 col-form-label">Confirm Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Confirm your new email here">
+                <small id="passwordHelpBlock" class="form-text text-muted">
+                  You will be sent a confirmation email to confirm the change.
+                  </small>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-12 text-center">
+                <button type="submit" class="button">Change Email</button>
+              </div>
+            </div>
           </form>
         </div>
       </div>

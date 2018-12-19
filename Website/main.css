@@ -37,21 +37,6 @@
   cursor: not-allowed;
 }
 
-/* Back to top button */
-#topbutton {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99; /* Make sure it does not overlap */
-  border: none;
-  outline: none;
-  cursor: pointer;
-  background-color: transparent;
-  font-size: 50px;
-  font-color: red;
-}
-
 .input{
   background-color: #FFFFFF;
   border: 1px solid #8492A6;
