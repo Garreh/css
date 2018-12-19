@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>Adding Accounts</title>
+<title>Editing Accounts</title>
 
   <?php include('Others/header.php'); ?>
 
