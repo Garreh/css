@@ -23,7 +23,7 @@
 
 <div class="row-fluid">
   <div class="col-4">
-    <a href="adminmenu.php" class="backbtn">
+    <a href="adminpanel.php" class="backbtn">
       <i class="fas fa-angle-left" style="color:#274395;"></i> BACK
     </a>
   </div>
