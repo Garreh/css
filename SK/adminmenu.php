@@ -1,12 +1,10 @@
 <!doctype html>
 <html>
 <head>
-	<link rel = "stylesheet" href="main.css">
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-  <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous">
-  </script>
-  <script src="main.js"></script>
+
+
   <title>Management Menu</title>
+	<?php include('Others/header.php'); ?>
   <style>
 
 
@@ -15,7 +13,7 @@
     grid-template-columns: auto auto ;
     grid-gap: 50px;
     padding: 10px;
-    margin-top:20%;
+
   }
 
   .grid-item {
@@ -28,44 +26,86 @@
 </head>
 
 <body>
-
+<?php include('Others/navbar.php'); ?>
 <!-- Navigation bar -->
-<div class="navbar">
-	<a href="mainmenu.html"><img src="logo.png" id="logo"></a>
-	<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-		<a href="mainmenu.html">Home</a>
-		<a href="importmenu.html">Import</a>
-  	<a href="javascript:void(0)">Export</a>
-  	<a href="javascript:void(0)">Accounting</a>
-  	<a href="javascript:void(0)">Management</a>
-  	<a href="javascript:void(0)">Sales</a>
-    <a href="javascript:void(0)"><img src="admin.png" id="adminlogo"></a>
-  	<div class="dropdown">
-    	<button class="dropbtn">Logged in as Kasai Kazuki&nbsp;
-        <i class="fas fa-caret-down"></i>
-      </button>
-    		<div class="dropdown-content">
-      			<a href="accountsettings.html">Manage Account</a>
-            <a href="adminmenu.html">Manage Employee Accounts</a>
-      			<a href="javascript:void(0)">Sign Out</a>
-    		</div>
-  	</div>
+	<div class="container-fluid title" style="height:220px; background-color:#274395;">
+	  <div class="row-fluid">
+	    <div class="col pt-5">
+	      Manage User
+	    </div>
+	  </div>
+	</div>
+
+
+
 </div>
+<div class="container pt-5">
+  <div class="row justify-content-around">
+    <div class="col">
+      	<img src="Others/like.png" class=" rounded  " alt="..." style="  width: 246.13px; height: 246.13px;" >
+    </div>
+    <div class="col">
+      <img src="Others/like.png" class="rounded " alt="..." style="  width: 246.13px; height: 246.13px;">
 
-<!-- Jump to top button -->
-<button onclick="topFunction()" id="topbutton">
-  <i class="fas fa-caret-up" style="color:#0000FF;"></i>
-</button>
+    </div>
+    <div class="col">
+      <img src="Others/like.png" class="rounded " alt="..." style="  width: 246.13px; height: 246.13px;">
 
-<div class="title" style="height:295px; background-color:#274395;">
-  <div style="margin-top:100px;">
-    <a>Manage Employee Accounts</a>
+    </div>
   </div>
 
+	<div class="row justify-content-around">
+		<div class="col">
+				<img src="Others/like.png" class="img-fluid rounded img-responsive " alt="..." style="  width: 246.13px; height: 246.13px;" >
+
+		</div>
+
+		<div class="col-">
+			<img src="Others/like.png" class="img-fluid rounded img-responsive " alt="..." style="  width: 246.13px; height: 246.13px;">
+
+		</div>
+	</div>
+
+</div>
+
+<div class="container justify-content-md-center">
+  <div class="row justify-content-md-center">
+    <div class="col justify-content-md-center">
+      1 of 2
+    </div>
+    <div class="col justify-content-md-center">
+      2 of 2
+    </div>
+  </div>
+  <div class="row">
+    <div class="col justify-content-md-center">
+      1 of 3
+    </div>
+    <div class="col justify-content-md-center">
+      2 of 3
+    </div>
+    <div class="col justify-content-md-center">
+      3 of 3
+    </div>
+  </div>
 </div>
 
 
-<center>
+<div class="container ">
+  <div class="row">
+    <div class="col align-items-center">
+      One of three columns
+    </div>
+    <div class="col align-self-center">
+      One of three columns
+    </div>
+    <div class="col align-self-end">
+      One of three columns
+    </div>
+  </div>
+</div>
+
+<!-- <center>
 
   <div class="grid-container">
     <div class="grid-item">
@@ -81,7 +121,7 @@
     <div class="grid-text">
         <a href="adminpanel.html"><button style="width: 246.13px; height: 65px; font-size: 27px;" class="button">Edit and Delete</button></a>
     </div>
-</center>
+</center> -->
 
 
 

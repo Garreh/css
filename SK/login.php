@@ -2,31 +2,50 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel = "stylesheet" href="main.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous">  </script>
+    <?php include('Others/header.php'); ?>
     <meta charset="utf-8">
     <title>Login</title>
 
   </head>
   <body>
     <br><br><br><br>
+    <!-- <div class="row-fluid">
+      <div class="col-4">
+        <a href="adminmenu.php" class="backbtn">
+          <i class="fas fa-angle-left" style="color:#274395;"></i> BACK
+        </a>
+      </div>
+    </div> -->
     <center>
+      <img src="Others/sklogo.png"  class="rounded mx-auto d-block" alt="sklogo" width= 252px height= 233px;>
       <img src="sklogo.png" alt="" width= 252px height= 233px;>
     <h1>SK MANAGEMENT SHIPPING SYSTEM</h1>
-    <br><br>
-    <input type="text" class="input" name="" value="" placeholder="Login ID" style="padding-left:10px;">
-    <br><br><br>
-    <input type="password" class="input" name="" value="" placeholder="Password"style="padding-left:10px;">
-    <br><br>
-    <div style="width: 406px;height: 94px; background-color:black; color:white;" class="capcha">
-      captcha placeholder
-    </div>
-    <br><br>
-    <button style=" width: 288px; height: 56px; font-size: 27px;" class="button">Sign In</button>
-    <br><br>
-
-    <a href="#" style="color: #49A7CC;text-decoration:none;">Forgot your password?</a>
+  <br>
 </center>
+
+<form name="form" method="post" id="" class="form-horizontal container pt-5">
+  <div class="form-group row justify-content-center">
+    <label for="inputID" class="col-sm-2 col-form-label">Login ID</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="inputID" placeholder="Enter your login id here">
+    </div>
+  </div>
+  <div class="form-group row justify-content-center">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-4">
+      <input type="password" class="form-control" id="inputPassword" placeholder="Enter your password here">
+      <br>
+      <small id="passwordHelpBlock" class="form-text text-mutedw">
+      <a href="#">Forgot your password?</a>
+      </small>
+    </div>
+  </div>
+  <br>
+  <div class="form-group row justify-content-center">
+    <div class="col-sm-7 text-center">
+      <button type="submit" class="button">Login</button>
+    </div>
+  </div>
+</form>
   </body>
 </html>

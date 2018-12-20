@@ -2,32 +2,45 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel = "stylesheet" href="main.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous">  </script>
+      <?php include('Others/header.php'); ?>
     <meta charset="utf-8">
     <title>Forgot Password</title>
 
   </head>
   <body>
-    <br><br><br><br>
+      <br><br><br><br>
     <center>
+      <img src="Others/sklogo.png"  class="rounded mx-auto d-block" alt="sklogo" width= 252px height= 233px;>
       <img src="sklogo.png" alt="" width= 252px height= 233px;>
-    <h1>Forgot your Password?</h1>
-    <p style="font-size:12px; color:#8190A5;">Enter your email account and a new password will be sent to your email. Be sure to check your spam folder</p>
-    <br><br>
-    <input type="text" class="input" name="" value="" placeholder="Login ID" style="padding-left:10px;">
-    <br><br><br>
-    <input type="email" class="input" name="" value="" placeholder="Registered Email Address"style="padding-left:10px;">
-    <br><br>
-    <div style="width: 406px;height: 94px; background-color:black; color:white;" class="capcha">
-      captcha placeholder
+    <h1>SK MANAGEMENT SHIPPING SYSTEM</h1>
+  <br>
+  </center>
+
+  <form name="form" method="post" id="" class="form-horizontal container pt-5">
+  <div class="form-group row justify-content-center">
+    <label for="inputID" class="col-sm-2 col-form-label">Login ID</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="inputID" placeholder="Enter your login id here">
     </div>
-    <br><br>
-    <button style=" width: 288px; height: 56px; font-size: 27px;" class="button">Submit</button>
-    <br><br><br><br><br>
+  </div>
+  <div class="form-group row justify-content-center">
+    <label for="inputEmail" class="col-sm-2 col-form-label">Registered Email</label>
+    <div class="col-sm-4">
+      <input type="email" class="form-control" id="inputEmail" placeholder="Enter your registered email here">
+      <br>
+      <small class="form-text text-mutedw">
+      <a href="#">Forgot your password?</a>
+      </small>
+    </div>
+  </div>
+  <br>
+  <div class="form-group row justify-content-center">
+    <div class="col-sm-7 text-center">
+      <button type="submit" class="button">Submit</button>
+    </div>
+  </div>
+  </form>
 
 
-</center>
   </body>
 </html>
